@@ -50,7 +50,7 @@ def process(raw):
             if(setDate <= base and base < setDate.replace(weeks=+1)):
                 entry['current_week'] = True
             else:
-                entry[;current_week] = False
+                entry[current_week] = False
 
         elif field == 'topic' or field == 'project':
             entry[field] = content
