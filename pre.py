@@ -47,7 +47,7 @@ def process(raw):
             content = int(content) #make date integer
             setDate = base.replace(weeks=+(content-1)) #set start of week
             entry['date'] = setDate.format("ddd MM/DD/YYYY")
-            if(setDate <= base and base < setDate.replace(weeks+=1)):
+            if(setDate <= base and base < setDate.replace(weeks=+1)):
                 entry['current_week'] = True
             else:
                 entry[;current_week] = False
